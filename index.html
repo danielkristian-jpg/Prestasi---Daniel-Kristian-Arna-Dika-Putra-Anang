@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portofolio Prestasi - Daniel Kristian</title>
+    <style>
+        :root {
+            --primary: #1e3a8a;
+            --secondary: #b45309;
+            --dark: #1f2937;
+            --light: #f3f4f6;
+            --white: #ffffff;
+            --gold: #f59e0b;
+            --bronze: #cd7f32;
+        }
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body {
+            background-color: var(--light);
+            color: var(--dark);
+            line-height: 1.6;
+        }
+
+        header {
+            background: linear-gradient(135deg, #0f172a, #1e3a8a);
+            color: var(--white);
+            padding: 3rem 1rem;
+            text-align: center;
+            border-bottom: 5px solid var(--gold);
+        }
+
+        header h1 {
+            font-size: 2.5rem;
+            margin-bottom: 0.5rem;
+            letter-spacing: 1px;
+        }
+
+        header p {
+            font-size: 1.1rem;
+            opacity: 0.9;
+        }
+
+        .container {
+            max-width: 1000px;
+            margin: 2rem auto;
+            padding: 0 1rem;
+        }
+
+        .section-title {
+            font-size: 1.8rem;
+            color: var(--primary);
+            margin-bottom: 1.5rem;
+            border-bottom: 3px solid var(--primary);
+            padding-bottom: 0.5rem;
+        }
+
+        .grid {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 1.5rem;
+            margin-bottom: 3rem;
+        }
+
+        @media (min-width: 768px) {
+            .grid {
+                grid-template-columns: 1fr 1fr;
+            }
+        }
+
+        .card {
+            background-color: var(--white);
+            border-radius: 8px;
+            padding: 1.5rem;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+            border-left: 5px solid var(--primary);
+            transition: transform 0.2s;
+        }
+
+        .card:hover {
+            transform: translateY(-3px);
+        }
+
+        .card.gold-border {
+            border-left-color: var(--gold);
+        }
+
+        .card.bronze-border {
+            border-left-color: var(--bronze);
+        }
+
+        .badge {
+            display: inline-block;
+            padding: 0.25rem 0.75rem;
+            border-radius: 50px;
+            font-size: 0.85rem;
+            font-weight: bold;
+            text-transform: uppercase;
+            margin-bottom: 0.75rem;
+        }
+
+        .badge-gold {
+            background-color: #fef3c7;
+            color: #d97706;
+        }
+
+        .badge-bronze {
+            background-color: #ffedd5;
+            color: #c2410c;
+        }
+
+        .card h3 {
+            font-size: 1.3rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .card p {
+            color: #4b5563;
+            font-size: 0.95rem;
+        }
+
+        .meta {
+            margin-top: 1rem;
+            font-size: 0.85rem;
+            color: #9ca3af;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        footer {
+            background-color: #0f172a;
+            color: var(--white);
+            text-align: center;
+            padding: 1.5rem 1rem;
+            font-size: 0.9rem;
+            margin-top: 4rem;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Daniel Kristian Arna Dika Putra Anang</h1>
+        <p>Siswa Kelas XI-2 | Portofolio Prestasi Olahraga</p>
+    </header>
+
+    <div class="container">
+        
+        <!-- PENCAK SILAT SECTION -->
+        <h2 class="section-title">🥋 Pencak Silat</h2>
+        <div class="grid">
+            <div class="card gold-border">
+                <span class="badge badge-gold">Juara 1 (Emas)</span>
+                <h3>Kejuaraan Pencak Silat Surabaya City of Heroes 2026</h3>
+                <p>Berhasil meraih podium tertinggi pada kategori Utama.</p>
+                <div class="meta">
+                    <span>Tahun: 2026</span>
+                </div>
+            </div>
+
+            <div class="card gold-border">
+                <span class="badge badge-gold">Juara 1</span>
+                <h3>Seni Tunggal Putra</h3>
+                <p>Meraih peringkat pertama pada kompetisi kategori keindahan teknik dan jurus Seni Tunggal Putra.</p>
+                <div class="meta">
+                    <span>Kategori: Seni</span>
+                </div>
+            </div>
+
+            <div class="card bronze-border">
+                <span class="badge badge-bronze">Juara 3 (Perunggu)</span>
+                <h3>Putra Remaja Kelas C</h3>
+                <p>Meraih medali perunggu pada kategori tanding (tanding kelas C) tingkat remaja.</p>
+                <div class="meta">
+                    <span>Kategori: Tanding</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- KABADDI SECTION -->
+        <h2 class="section-title">🏃 Kabaddi</h2>
+        <div class="grid">
+            <div class="card bronze-border">
+                <span class="badge badge-bronze">Juara 3 Bersama</span>
+                <h3>Kabaddi Championship "Kejuaraan Kota Surabaya" 2026</h3>
+                <p>Meraih peringkat ketiga bersama Tim Putra. Berjuang keras dalam satu tim yang solid.</p>
+                <div class="meta">
+                    <span>Rekan Tim: Darren M.S.P.W & M. Riki Saputra</span>
+                    <span>Tahun: 2026</span>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <footer>
+        <p>&copy; 2026 Portofolio Prestasi Olahraga Siswa. Hak Cipta Dilindungi.</p>
+    </footer>
+
+</body>
+</html>
